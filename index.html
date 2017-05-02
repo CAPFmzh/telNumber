@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ol id="ol" style="float: left">
+
+</ol>
+<ul id="ul" style="float: left">
+
+</ul>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+    var token=null,
+        user_id=null,
+        newAry0=null,
+        newAry1=null,
+        _url = "http://api.zhugefang.com/API/",
+        houseType=1;
+    function UrlSearch() {
+        var name, value;
+        //取得整个地址栏
+        var str = location.href;
+        //str = str.split("#")[1];
+        if (str) {
+            var num = str.indexOf("?");
+            //取得所有参数
+            str = str.substr(num + 1);
+            //各个参数放到数组里
+            var arr = str.split("&");
+            for (var i = 0; i < arr.length; i++) {
+                num = arr[i].indexOf("=");
+                if (num > 0) {
+                    name = arr[i].substring(0, num);
+                    value = arr[i].substr(num + 1);
+                    this[name] = value;
+                    console.log(name)
+                }
+            }
+        }
+    }
+    var urlRequest = new UrlSearch();
+    var num=urlRequest.num;
+    var City=urlRequest.city;
+    console.log(num+":"+City);
+
+    $.ajax({
+        url: _url + "WapUserBehavior/getusertoken",
+        type: 'post',
+        async:false,
+        data: {
+            "platformType": 1,
+            "appName":"zgzf"
+        },
+        success: function(xhr) {
+            token= xhr.data.userINfo.token;
+            user_id=xhr.data.userINfo.userId;
+        }
+    });
+    var data = {
+        "city": City,
+        "token": token,
+        "platformType": 1,
+        "pageStart": 1,
+        "pageLimit": num,
+        "houseType": 1,
+        "appName": "zgzf"
+    };
+
+        $.ajax({
+            url: _url + "DspHouse/search",
+            type: 'post',
+            async:false,
+            data: data,
+            success: function (xhr) {
+                var arrList = xhr.data.list;
+                function filter1(Lists) {
+                    var arrays=[];
+                    for(var i=0;i<Lists.length;i++){
+                        var id = Lists[i].owner_phone;
+                        arrays.push(id);
+                    }
+                    function qu(ary) {
+                        var ary1=[];
+                        for (var i=0;i<ary.length;i++){
+                            if(ary1.indexOf(ary[i])==-1){
+                                ary1.push(ary[i]);
+                            }
+                        }
+                        return ary1
+                    }
+                    return qu(arrays);
+                }
+                function filter2(Lists) {
+                    var arrays=[];
+                    for(var i=0;i<Lists.length;i++){
+                        var id = Lists[i].broker_real_name;
+                        arrays.push(id);
+                    }
+                    function qu(ary) {
+                        var ary1=[];
+                        for (var i=0;i<ary.length;i++){
+                            if(ary1.indexOf(ary[i])==-1){
+                                ary1.push(ary[i]);
+                            }
+                        }
+                        return ary1
+                    }
+                    return qu(arrays);
+                }
+                newAry0=filter1(arrList);
+                newAry1=filter2(arrList);
+                console.log(newAry0);
+            }
+        });
+    var str='';
+    $(newAry0).each(function (index,item) {
+        console.log(item);
+        str='<li>'+item+'</li>';
+        //var ol=document.getElementById('ol');
+        $('#ol').append(str)
+
+    });
+    str='';
+    $(newAry1).each(function (index,item) {
+        console.log(item);
+        str='<li>'+item+'</li>';
+        //var ol=document.getElementById('ol');
+        $('#ul').append(str)
+
+    });
+
+</script>
