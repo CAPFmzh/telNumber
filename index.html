@@ -3,19 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style type="text/css" rel="stylesheet">
+
+
+    </style>
 </head>
 <body>
-<ol id="ol" style="float: left">
+<div class="inp">
+    <div style="display: inline-block"><span>总房源数</span><input type="text" id="allnum"></div>
+    <div style="display: inline-block"><span>城市</span><input type="text" id="city"></div>
+    <div style="display: inline-block"><span>房源ID</span><input type="text" id="houseID"></div>
+    <div style="display: inline-block" id="btn">查找</div>
+</div>
+
+<h1>经纪人and电话</h1>
+<div style="overflow: hidden">
+    <ol id="ol" style="float: left">
 
 </ol>
-<ul id="ul" style="float: left">
+    <ul id="ul" style="float: left">
 
 </ul>
+</div>
+<h1>房源信息</h1>
+<div id="houseMessage">
+
+</div>
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script type="text/javascript">
-    var token=null,
+    $('#btn').on('click',function () {
+        var allNum=$('#allnum').val();
+        var City=$('#city').val();
+        var houseId=$('#houseID').val();
+        var json=[];
+        var token=null,
+                user_id=null,
+                newAry0=null,
+                newAry1=null,
+                _url = "http://api.zhugefang.com/API/",
+                houseType=1;
+        //获取token
+        $.ajax({
+            url: _url + "WapUserBehavior/getusertoken",
+            type: 'post',
+            async:false,
+            data: {
+                "platformType": 1,
+                "appName":"zgzf"
+            },
+            success: function(xhr) {
+                token= xhr.data.userINfo.token;
+                user_id=xhr.data.userINfo.userId;
+            }
+        });
+        //获取数据所需的参数
+        var data = {
+            "city": City,
+            "token": token,
+            "platformType": 1,
+            "pageStart": 1,
+            "pageLimit": allNum,
+            "houseType": 1,
+            "appName": "zgzf"
+        };
+        //获取数据
+        $.ajax({
+            url: _url + "DspHouse/search",
+            type: 'post',
+            async:false,
+            data: data,
+            success: function (xhr) {
+                var arrList = xhr.data.list;
+                function filter1(Lists) {
+                    var arrays=[];
+                    //循环所有的数据
+                    for(var i=0;i<Lists.length;i++){
+                        var id = Lists[i].owner_phone;
+                        arrays.push(id);
+                        if(Lists[i].id==houseId){
+                            json.push(Lists[i])
+                        }
+                    }
+                    console.log(json);
+                    $('#houseMessage').html(""+JSON.stringify(json));
+                    function qu(ary) {
+                        var ary1=[];
+                        for (var i=0;i<ary.length;i++){
+                            if(ary1.indexOf(ary[i])==-1){
+                                ary1.push(ary[i]);
+                            }
+                        }
+                        return ary1
+                    }
+                    return qu(arrays);
+                }
+                function filter2(Lists) {
+                    var arrays=[];
+                    for(var i=0;i<Lists.length;i++){
+                        var id = Lists[i].broker_real_name;
+                        arrays.push(id);
+                    }
+                    function qu(ary) {
+                        var ary1=[];
+                        for (var i=0;i<ary.length;i++){
+                            if(ary1.indexOf(ary[i])==-1){
+                                ary1.push(ary[i]);
+                            }
+                        }
+                        return ary1
+                    }
+                    return qu(arrays);
+                }
+                newAry0=filter1(arrList);
+                newAry1=filter2(arrList);
+                console.log(newAry0);
+            }
+        });
+        var str='';
+        $(newAry0).each(function (index,item) {
+            console.log(item);
+            str='<li>'+item+'</li>';
+            //var ol=document.getElementById('ol');
+            $('#ol').append(str)
+
+        });
+        str='';
+        $(newAry1).each(function (index,item) {
+            console.log(item);
+            str='<li>'+item+'</li>';
+            //var ol=document.getElementById('ol');
+            $('#ul').append(str)
+
+        });
+    })
+    /*var token=null,
         user_id=null,
         newAry0=null,
         newAry1=null,
@@ -132,6 +255,6 @@
         //var ol=document.getElementById('ol');
         $('#ul').append(str)
 
-    });
+    });*/
 
 </script>
