@@ -34,16 +34,18 @@
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script type="text/javascript">
     $('#btn').on('click',function () {
+        $('#ul,#ol').html('');
         var allNum=$('#allnum').val();
         var City=$('#city').val();
         var houseId=$('#houseID').val();
         var json=[];
         var token=null,
-                user_id=null,
-                newAry0=null,
-                newAry1=null,
-                _url = "http://api.zhugefang.com/API/",
-                houseType=1;
+
+
+            user_id=null,
+            newAry0=null,
+            newAry1=null,
+            _url = "http://api.zhugefang.com/API/";
         //获取token
         $.ajax({
             url: _url + "WapUserBehavior/getusertoken",
@@ -76,18 +78,32 @@
             data: data,
             success: function (xhr) {
                 var arrList = xhr.data.list;
-                function filter1(Lists) {
-                    var arrays=[];
-                    //循环所有的数据
-                    for(var i=0;i<Lists.length;i++){
-                        var id = Lists[i].owner_phone;
-                        arrays.push(id);
-                        if(Lists[i].id==houseId){
-                            json.push(Lists[i])
+                /*
+                * arrList 请求的总数据
+                * a  传1是取名字  传2是取电话
+                * */
+                if(houseId!=''){//取房源信息
+                    for(var i=0;i<arrList.length;i++){
+                        if(arrList[i].id==houseId){
+                            json.push(arrList[i])
                         }
                     }
                     console.log(json);
                     $('#houseMessage').html(""+JSON.stringify(json));
+                }
+                function filter(Lists,a) {
+                    var arrays=[],i,name,tel;
+                    if(a==1){//筛选经济人姓名
+                        for(i=0;i<Lists.length;i++){
+                            name = Lists[i].broker_real_name;
+                            arrays.push(name);
+                        }
+                    }else if(a == 2){//筛选经济人电话
+                        for(i=0;i<Lists.length;i++){
+                            tel = Lists[i].owner_phone;
+                            arrays.push(tel);
+                        }
+                    }
                     function qu(ary) {
                         var ary1=[];
                         for (var i=0;i<ary.length;i++){
@@ -99,25 +115,8 @@
                     }
                     return qu(arrays);
                 }
-                function filter2(Lists) {
-                    var arrays=[];
-                    for(var i=0;i<Lists.length;i++){
-                        var id = Lists[i].broker_real_name;
-                        arrays.push(id);
-                    }
-                    function qu(ary) {
-                        var ary1=[];
-                        for (var i=0;i<ary.length;i++){
-                            if(ary1.indexOf(ary[i])==-1){
-                                ary1.push(ary[i]);
-                            }
-                        }
-                        return ary1
-                    }
-                    return qu(arrays);
-                }
-                newAry0=filter1(arrList);
-                newAry1=filter2(arrList);
+                newAry0=filter(arrList,1);
+                newAry1=filter(arrList,2);
                 console.log(newAry0);
             }
         });
@@ -138,123 +137,4 @@
 
         });
     })
-    /*var token=null,
-        user_id=null,
-        newAry0=null,
-        newAry1=null,
-        _url = "http://api.zhugefang.com/API/",
-        houseType=1;
-    function UrlSearch() {
-        var name, value;
-        //取得整个地址栏
-        var str = location.href;
-        //str = str.split("#")[1];
-        if (str) {
-            var num = str.indexOf("?");
-            //取得所有参数
-            str = str.substr(num + 1);
-            //各个参数放到数组里
-            var arr = str.split("&");
-            for (var i = 0; i < arr.length; i++) {
-                num = arr[i].indexOf("=");
-                if (num > 0) {
-                    name = arr[i].substring(0, num);
-                    value = arr[i].substr(num + 1);
-                    this[name] = value;
-                    console.log(name)
-                }
-            }
-        }
-    }
-    var urlRequest = new UrlSearch();
-    var num=urlRequest.num;
-    var City=urlRequest.city;
-    console.log(num+":"+City);
-
-    $.ajax({
-        url: _url + "WapUserBehavior/getusertoken",
-        type: 'post',
-        async:false,
-        data: {
-            "platformType": 1,
-            "appName":"zgzf"
-        },
-        success: function(xhr) {
-            token= xhr.data.userINfo.token;
-            user_id=xhr.data.userINfo.userId;
-        }
-    });
-    var data = {
-        "city": City,
-        "token": token,
-        "platformType": 1,
-        "pageStart": 1,
-        "pageLimit": num,
-        "houseType": 1,
-        "appName": "zgzf"
-    };
-
-        $.ajax({
-            url: _url + "DspHouse/search",
-            type: 'post',
-            async:false,
-            data: data,
-            success: function (xhr) {
-                var arrList = xhr.data.list;
-                function filter1(Lists) {
-                    var arrays=[];
-                    for(var i=0;i<Lists.length;i++){
-                        var id = Lists[i].owner_phone;
-                        arrays.push(id);
-                    }
-                    function qu(ary) {
-                        var ary1=[];
-                        for (var i=0;i<ary.length;i++){
-                            if(ary1.indexOf(ary[i])==-1){
-                                ary1.push(ary[i]);
-                            }
-                        }
-                        return ary1
-                    }
-                    return qu(arrays);
-                }
-                function filter2(Lists) {
-                    var arrays=[];
-                    for(var i=0;i<Lists.length;i++){
-                        var id = Lists[i].broker_real_name;
-                        arrays.push(id);
-                    }
-                    function qu(ary) {
-                        var ary1=[];
-                        for (var i=0;i<ary.length;i++){
-                            if(ary1.indexOf(ary[i])==-1){
-                                ary1.push(ary[i]);
-                            }
-                        }
-                        return ary1
-                    }
-                    return qu(arrays);
-                }
-                newAry0=filter1(arrList);
-                newAry1=filter2(arrList);
-                console.log(newAry0);
-            }
-        });
-    var str='';
-    $(newAry0).each(function (index,item) {
-        console.log(item);
-        str='<li>'+item+'</li>';
-        //var ol=document.getElementById('ol');
-        $('#ol').append(str)
-
-    });
-    str='';
-    $(newAry1).each(function (index,item) {
-        console.log(item);
-        str='<li>'+item+'</li>';
-        //var ol=document.getElementById('ol');
-        $('#ul').append(str)
-
-    });*/
-
 </script>
