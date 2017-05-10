@@ -1,10 +1,725 @@
-{
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+[
+  {
+    "id": 1285698,
+    "house_title": "3室2厅2卫精装",
+    "created_time": 1458714618,
+    "borough_name": "恒盛豪庭",
+    "borough_id": 7,
+    "house_room": 3,
+    "broker_cnt": 1,
+    "house_hall": 2,
+    "updated": 1493413855,
+    "house_totalarea": 170,
+    "house_built_year": "2011",
+    "house_toward": null,
+    "house_fitment": "豪华装修",
+    "house_floor": "5",
+    "min_price": 230,
+    "renzheng": {
+      "tags_name": "",
+      "tags_url": ""
+    },
+    "yichang": {
+      "tags_name": "",
+      "tags_url": ""
+    },
+    "housechange": {
+      "tags_name": "涨价房源",
+      "tags_url": ""
+    },
+    "abnormal": null,
+    "tag": [
+      "1107",
+      "1103"
+    ],
+    "feature": [],
+    "agency": [
+      {
+        "id": "62",
+        "source_id": "62",
+        "name": "骄阳",
+        "abbr": "骄阳",
+        "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cfb959b107e70c12919f5a349cf8bf0.png",
+        "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/b9b72f205b7b4b456f309b305ad3f542.png"
+      },
+      {
+        "id": "63",
+        "source_id": "63",
+        "name": "易房",
+        "abbr": "易房",
+        "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cac2387716672b54ccc8d0cfcb9a9c1.png",
+        "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/accd72288fa83e917febb27cfebb4307.png"
+      }
+    ],
+    "is_fangzhu": 0,
+    "trade_area": "群力新区",
+    "house_thumb": "http://img.zhuge888.com/sell/unit/haerbin_62_1285698_1_0.jpg",
+    "owner_phone": "18346037344",
+    "source": "63",
+    "broker_real_name": "牛剑伟",
+    "broker_id": "28263",
+    "imgData": [
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1285698_1_0.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1285698_1_1.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1285698_1_2.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1285698_1_3.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1285698_1_4.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1285698_1_5.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1285698_1_6.jpg"
+    ],
+    "receive_status": 4
   },
-  "exclude": [
-    "node_modules"
-  ]
-}
+  {
+    "id": 1562139,
+    "house_title": "闽江小区一期",
+    "created_time": 1484737084,
+    "borough_name": "闽江小区",
+    "borough_id": 310,
+    "house_room": 2,
+    "broker_cnt": 0,
+    "house_hall": 2,
+    "updated": 1493977735,
+    "house_totalarea": 114,
+    "house_built_year": "",
+    "house_toward": "东西",
+    "house_fitment": "中装修",
+    "house_floor": "6",
+    "min_price": 74,
+    "renzheng": {
+      "tags_name": "",
+      "tags_url": ""
+    },
+    "yichang": {
+      "tags_name": "",
+      "tags_url": ""
+    },
+    "housechange": {
+      "tags_name": "",
+      "tags_url": ""
+    },
+    "abnormal": null,
+    "tag": [
+      "20010",
+      "30403",
+      "11601"
+    ],
+    "feature": [
+      "私产",
+      "无税",
+      "黄金楼层"
+    ],
+    "agency": [
+      {
+        "id": "66",
+        "source_id": "66",
+        "name": "好家庭",
+        "abbr": "好家庭",
+        "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/f1ea6714b9474cd0fc484a16d29300a2.png",
+        "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/dc61031aede290f3dcf343139d14012a.png"
+      },
+      {
+        "id": "63",
+        "source_id": "63",
+        "name": "易房",
+        "abbr": "易房",
+        "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cac2387716672b54ccc8d0cfcb9a9c1.png",
+        "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/accd72288fa83e917febb27cfebb4307.png"
+      },
+      {
+        "id": "62",
+        "source_id": "62",
+        "name": "骄阳",
+        "abbr": "骄阳",
+        "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cfb959b107e70c12919f5a349cf8bf0.png",
+        "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/b9b72f205b7b4b456f309b305ad3f542.png"
+      }
+    ],
+    "is_fangzhu": 0,
+    "trade_area": "开发区",
+    "house_thumb": "http://img.zhuge888.com/sell/unit/haerbin_62_1562139_1_0.jpg",
+    "owner_phone": "13654500257",
+    "source": "63",
+    "broker_real_name": "李明",
+    "broker_id": "1219",
+    "imgData": [
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1562139_1_0.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1562139_1_1.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1562139_1_2.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1562139_1_3.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1562139_1_4.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1562139_1_5.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1562139_1_6.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1562139_1_7.jpg"
+    ],
+    "receive_status": 2
+  },
+  {
+    "id": 1462503,
+    "house_title": "闽江小区65平米52万",
+    "created_time": 1481685844,
+    "borough_name": "闽江小区一期",
+    "borough_id": 310,
+    "house_room": 2,
+    "broker_cnt": 0,
+    "house_hall": 1,
+    "updated": 1494033909,
+    "house_totalarea": 65,
+    "house_built_year": "",
+    "house_toward": "南北",
+    "house_fitment": "中装修",
+    "house_floor": "高",
+    "min_price": 52,
+    "renzheng": {
+      "tags_name": "",
+      "tags_url": ""
+    },
+    "yichang": {
+      "tags_name": "",
+      "tags_url": ""
+    },
+    "housechange": {
+      "tags_name": "降价房源",
+      "tags_url": ""
+    },
+    "abnormal": null,
+    "tag": [
+      "11401",
+      "30101",
+      "1101",
+      "30403",
+      "11307",
+      "50301",
+      "11101"
+    ],
+    "feature": [
+      "采光好",
+      "价格可谈",
+      "无税",
+      "南北通透",
+      "有公交",
+      "稀缺户型"
+    ],
+    "agency": [
+      {
+        "id": "10",
+        "source_id": "10",
+        "name": "业主",
+        "abbr": "业主",
+        "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/house/source/571b2d7a9886b.png",
+        "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/236d9363e8e3b2c4d2b46634fa05f8c1.png"
+      },
+      {
+        "id": "63",
+        "source_id": "63",
+        "name": "易房",
+        "abbr": "易房",
+        "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cac2387716672b54ccc8d0cfcb9a9c1.png",
+        "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/accd72288fa83e917febb27cfebb4307.png"
+      },
+      {
+        "id": "62",
+        "source_id": "62",
+        "name": "骄阳",
+        "abbr": "骄阳",
+        "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cfb959b107e70c12919f5a349cf8bf0.png",
+        "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/b9b72f205b7b4b456f309b305ad3f542.png"
+      },
+      {
+        "id": "66",
+        "source_id": "66",
+        "name": "好家庭",
+        "abbr": "好家庭",
+        "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/f1ea6714b9474cd0fc484a16d29300a2.png",
+        "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/dc61031aede290f3dcf343139d14012a.png"
+      },
+      {
+        "id": "65",
+        "source_id": "65",
+        "name": "世纪振达",
+        "abbr": "世纪振达",
+        "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/0774d422075a86c971343e39b42d1b58.png",
+        "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/abcd395374db704cc6cb87f23e63bb0d.png"
+      }
+    ],
+    "is_fangzhu": 1,
+    "trade_area": "开发区",
+    "house_thumb": "http://img.zhuge888.com/sell/unit/haerbin_62_1635073_1_0.jpg",
+    "owner_phone": "13654500257",
+    "source": "63",
+    "broker_real_name": "李明",
+    "broker_id": "1219",
+    "imgData": [
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1635073_1_0.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1635073_1_1.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1635073_1_2.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1635073_1_3.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1635073_1_4.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1635073_1_5.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1635073_1_6.jpg",
+      "http://img.zhuge888.com/sell/unit/haerbin_62_1635073_1_7.jpg"
+    ],
+    "receive_status": 1
+  },
+  {
+      "id": 1757547,
+      "house_title": "泰富长安城",
+      "created_time": 1490410093,
+      "borough_name": "泰富长安城",
+      "borough_id": 25,
+      "house_room": 2,
+      "broker_cnt": 0,
+      "house_hall": 1,
+      "updated": 1493983314,
+      "house_totalarea": 101,
+      "house_built_year": "2005",
+      "house_toward": "南北",
+      "house_fitment": "中装修",
+      "house_floor": "6",
+      "min_price": 72,
+      "renzheng": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "yichang": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "housechange": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "abnormal": null,
+      "tag": [
+        "50102"
+      ],
+      "feature": [
+        "封闭管理"
+      ],
+      "agency": [
+        {
+          "id": "66",
+          "source_id": "66",
+          "name": "好家庭",
+          "abbr": "好家庭",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/f1ea6714b9474cd0fc484a16d29300a2.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/dc61031aede290f3dcf343139d14012a.png"
+        },
+        {
+          "id": "63",
+          "source_id": "63",
+          "name": "易房",
+          "abbr": "易房",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cac2387716672b54ccc8d0cfcb9a9c1.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/accd72288fa83e917febb27cfebb4307.png"
+        },
+        {
+          "id": "62",
+          "source_id": "62",
+          "name": "骄阳",
+          "abbr": "骄阳",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cfb959b107e70c12919f5a349cf8bf0.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/b9b72f205b7b4b456f309b305ad3f542.png"
+        },
+        {
+          "id": "65",
+          "source_id": "65",
+          "name": "世纪振达",
+          "abbr": "世纪振达",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/0774d422075a86c971343e39b42d1b58.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/abcd395374db704cc6cb87f23e63bb0d.png"
+        }
+      ],
+      "is_fangzhu": 0,
+      "trade_area": "药六",
+      "house_thumb": "http://img.zhuge888.com/sell/unit/haerbin_62_1757547_1_0.jpg",
+      "owner_phone": "18245154196",
+      "source": "63",
+      "broker_real_name": "张婷",
+      "broker_id": "28089",
+      "imgData": [
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1757547_1_0.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1757547_1_1.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1757547_1_0.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1757547_1_1.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1757547_1_2.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1757547_1_3.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1757547_1_4.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1757547_1_5.jpg"
+      ],
+      "receive_status": 3
+    },
+  {
+      "id": 1256807,
+      "house_title": "福顺尚都",
+      "created_time": 1472270725,
+      "borough_name": "福顺尚都",
+      "borough_id": 43,
+      "house_room": 1,
+      "broker_cnt": 0,
+      "house_hall": 1,
+      "updated": 1494020794,
+      "house_totalarea": 54,
+      "house_built_year": "",
+      "house_toward": "南",
+      "house_fitment": "精装修",
+      "house_floor": "11",
+      "min_price": 58,
+      "renzheng": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "yichang": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "housechange": {
+        "tags_name": "涨价房源",
+        "tags_url": ""
+      },
+      "abnormal": null,
+      "tag": [
+        "12",
+        "50102",
+        "30403",
+        "11805",
+        "60101",
+        "1103"
+      ],
+      "feature": [
+        "地铁房",
+        "封闭管理",
+        "无税",
+        "精装修",
+        "可贷款"
+      ],
+      "agency": [
+        {
+          "id": "66",
+          "source_id": "66",
+          "name": "好家庭",
+          "abbr": "好家庭",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/f1ea6714b9474cd0fc484a16d29300a2.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/dc61031aede290f3dcf343139d14012a.png"
+        },
+        {
+          "id": "63",
+          "source_id": "63",
+          "name": "易房",
+          "abbr": "易房",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cac2387716672b54ccc8d0cfcb9a9c1.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/accd72288fa83e917febb27cfebb4307.png"
+        },
+        {
+          "id": "62",
+          "source_id": "62",
+          "name": "骄阳",
+          "abbr": "骄阳",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cfb959b107e70c12919f5a349cf8bf0.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/b9b72f205b7b4b456f309b305ad3f542.png"
+        }
+      ],
+      "is_fangzhu": 0,
+      "trade_area": "学府路",
+      "house_thumb": "http://img.zhuge888.com/sell/unit/haerbin_62_1256807_1_0.jpg",
+      "owner_phone": "15245701670",
+      "source": "63",
+      "broker_real_name": "刘兴旺",
+      "broker_id": "28340",
+      "imgData": [
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1256807_1_0.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1256807_1_1.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1256807_1_2.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1256807_1_3.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1256807_1_4.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1256807_1_6.jpg"
+      ],
+      "receive_status": 2
+    },
+  {
+      "id": 845196,
+      "house_title": "道里顾乡海富康城2室2厅1卫110.7平米",
+      "created_time": 1476275434,
+      "borough_name": "海富康城东区",
+      "borough_id": 19,
+      "house_room": 2,
+      "broker_cnt": 0,
+      "house_hall": 2,
+      "updated": 1494032687,
+      "house_totalarea": 110,
+      "house_built_year": "2005",
+      "house_toward": "南",
+      "house_fitment": "精装修",
+      "house_floor": "高",
+      "min_price": 75,
+      "renzheng": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "yichang": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "housechange": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "abnormal": null,
+      "tag": [
+        "11307",
+        "50204"
+      ],
+      "feature": [
+        "南北通透",
+        "有花园"
+      ],
+      "agency": [
+        {
+          "id": "10",
+          "source_id": "10",
+          "name": "业主",
+          "abbr": "业主",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/house/source/571b2d7a9886b.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/236d9363e8e3b2c4d2b46634fa05f8c1.png"
+        },
+        {
+          "id": "63",
+          "source_id": "63",
+          "name": "易房",
+          "abbr": "易房",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cac2387716672b54ccc8d0cfcb9a9c1.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/accd72288fa83e917febb27cfebb4307.png"
+        },
+        {
+          "id": "65",
+          "source_id": "65",
+          "name": "世纪振达",
+          "abbr": "世纪振达",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/0774d422075a86c971343e39b42d1b58.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/abcd395374db704cc6cb87f23e63bb0d.png"
+        }
+      ],
+      "is_fangzhu": 1,
+      "trade_area": "顾乡",
+      "house_thumb": "http://img.zhuge888.com/sell/unit/haerbin_10_845196_1_0.jpg",
+      "owner_phone": "13091450067",
+      "source": "63",
+      "broker_real_name": "耿傲",
+      "broker_id": "28316",
+      "imgData": [
+        "http://img.zhuge888.com/sell/unit/haerbin_10_845196_1_0.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_10_845196_1_1.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_10_845196_1_2.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_10_845196_1_3.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_10_845196_1_4.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_10_845196_1_5.jpg"
+      ],
+      "receive_status": 2
+    },
+  {
+      "id": 1247785,
+      "house_title": "2室1厅1卫中装",
+      "created_time": 1406033784,
+      "borough_name": "泰富长安城",
+      "borough_id": 25,
+      "house_room": 2,
+      "broker_cnt": 2,
+      "house_hall": 1,
+      "updated": 1493413709,
+      "house_totalarea": 90,
+      "house_built_year": "2005",
+      "house_toward": "南北",
+      "house_fitment": "简装修",
+      "house_floor": "7",
+      "min_price": 51,
+      "renzheng": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "yichang": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "housechange": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "abnormal": null,
+      "tag": [],
+      "feature": [],
+      "agency": [
+        {
+          "id": "62",
+          "source_id": "62",
+          "name": "骄阳",
+          "abbr": "骄阳",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cfb959b107e70c12919f5a349cf8bf0.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/b9b72f205b7b4b456f309b305ad3f542.png"
+        },
+        {
+          "id": "63",
+          "source_id": "63",
+          "name": "易房",
+          "abbr": "易房",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cac2387716672b54ccc8d0cfcb9a9c1.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/accd72288fa83e917febb27cfebb4307.png"
+        }
+      ],
+      "is_fangzhu": 0,
+      "trade_area": "药六",
+      "house_thumb": "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_0.jpg",
+      "owner_phone": "18245154196",
+      "source": "63",
+      "broker_real_name": "张婷",
+      "broker_id": "28089",
+      "imgData": [
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_0.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_1.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_2.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_3.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_4.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_5.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_6.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_7.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_8.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_9.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_10.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1247785_1_11.jpg"
+      ],
+      "receive_status": 1
+    },
+  {
+      "id": 1530427,
+      "house_title": "4室3厅4卫毛坯",
+      "created_time": 1484070664,
+      "borough_name": "盛和世纪",
+      "borough_id": 68,
+      "house_room": 4,
+      "broker_cnt": null,
+      "house_hall": 3,
+      "updated": 1493846107,
+      "house_totalarea": 285,
+      "house_built_year": "2011",
+      "house_toward": null,
+      "house_fitment": "毛坯",
+      "house_floor": "5",
+      "min_price": 410,
+      "renzheng": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "yichang": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "housechange": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "abnormal": null,
+      "tag": [],
+      "feature": [],
+      "agency": [
+        {
+          "id": "62",
+          "source_id": "62",
+          "name": "骄阳",
+          "abbr": "骄阳",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cfb959b107e70c12919f5a349cf8bf0.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/b9b72f205b7b4b456f309b305ad3f542.png"
+        },
+        {
+          "id": "63",
+          "source_id": "63",
+          "name": "易房",
+          "abbr": "易房",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cac2387716672b54ccc8d0cfcb9a9c1.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/accd72288fa83e917febb27cfebb4307.png"
+        }
+      ],
+      "is_fangzhu": 0,
+      "trade_area": "群力新区",
+      "house_thumb": "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_0.jpg",
+      "owner_phone": "13091450067",
+      "source": "63",
+      "broker_real_name": "耿傲",
+      "broker_id": "28316",
+      "imgData": [
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_0.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_1.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_2.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_3.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_4.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_5.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_6.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_7.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_8.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_9.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1530427_1_10.jpg"
+      ],
+      "receive_status": 3
+    },
+  {
+      "id": 1561619,
+      "house_title": "地点好格局好户型好采光好",
+      "created_time": 1493881446,
+      "borough_name": "美晨家园",
+      "borough_id": 8,
+      "house_room": 2,
+      "broker_cnt": 0,
+      "house_hall": 1,
+      "updated": 1493881445,
+      "house_totalarea": 58,
+      "house_built_year": "2007",
+      "house_toward": "南",
+      "house_fitment": "简装修",
+      "house_floor": "6",
+      "min_price": 53,
+      "renzheng": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "yichang": {
+        "tags_name": "",
+        "tags_url": ""
+      },
+      "housechange": {
+        "tags_name": "最新上架",
+        "tags_url": ""
+      },
+      "abnormal": null,
+      "tag": [
+        "1103",
+        1106,
+        1105
+      ],
+      "feature": [],
+      "agency": [
+        {
+          "id": "62",
+          "source_id": "62",
+          "name": "骄阳",
+          "abbr": "骄阳",
+          "logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/8cfb959b107e70c12919f5a349cf8bf0.png",
+          "small_logo_url": "http://zhaijiso-pic.b0.upaiyun.com/user/headimg/b9b72f205b7b4b456f309b305ad3f542.png"
+        }
+      ],
+      "is_fangzhu": 0,
+      "trade_area": "群力新区",
+      "house_thumb": "http://img.zhuge888.com/sell/unit/haerbin_62_1561619_1_0.jpg",
+      "owner_phone": "13091450067",
+      "source": "63",
+      "broker_real_name": "耿傲",
+      "broker_id": "28316",
+      "imgData": [
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1561619_1_0.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1561619_1_1.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1561619_1_2.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1561619_1_3.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1561619_1_4.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1561619_1_5.jpg",
+        "http://img.zhuge888.com/sell/unit/haerbin_62_1561619_1_6.jpg"
+      ],
+      "receive_status": 4
+    }
+]
+

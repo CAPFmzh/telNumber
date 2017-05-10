@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css" rel="stylesheet">
-
+        #house_ID span{
+            display: block;
+        }
 
     </style>
 </head>
@@ -12,19 +14,32 @@
 <div class="inp">
     <div style="display: inline-block"><span>总房源数</span><input type="text" id="allnum"></div>
     <div style="display: inline-block"><span>城市</span><input type="text" id="city"></div>
+    <div style="display: inline-block"><span>经纪人手机号</span><input type="text" id="tel"></div>
     <div style="display: inline-block"><span>房源ID</span><input type="text" id="houseID"></div>
     <div style="display: inline-block" id="btn">查找</div>
 </div>
 
-<h1>经纪人and电话</h1>
 <div style="overflow: hidden">
-    <ol id="ol" style="float: left">
+    <div style="float: left">
+        <h1>经纪人and电话</h1>
+        <div style="overflow: hidden">
+            <ol id="ol" style="float: left">
 
-</ol>
-    <ul id="ul" style="float: left">
+            </ol>
+            <ul id="ul" style="float: left">
 
-</ul>
+            </ul>
+        </div>
+    </div>
+    <div style="float: left;margin-left: 100px">
+        <h1>经济人对应的房源</h1>
+        <div id="house_ID">
+
+        </div>
+    </div>
 </div>
+
+
 <h1>房源信息</h1>
 <div id="houseMessage">
 
@@ -38,10 +53,10 @@
         var allNum=$('#allnum').val();
         var City=$('#city').val();
         var houseId=$('#houseID').val();
+        var tel=$('#tel').val();
         var json=[];
         var token=null,
-
-
+            DataObj={},
             user_id=null,
             newAry0=null,
             newAry1=null,
@@ -77,6 +92,7 @@
             async:false,
             data: data,
             success: function (xhr) {
+                DataObj=xhr.data.list;
                 var arrList = xhr.data.list;
                 /*
                 * arrList 请求的总数据
@@ -91,6 +107,7 @@
                     console.log(json);
                     $('#houseMessage').html(""+JSON.stringify(json));
                 }
+                //筛选经纪人  和  手机号
                 function filter(Lists,a) {
                     var arrays=[],i,name,tel;
                     if(a==1){//筛选经济人姓名
@@ -136,5 +153,22 @@
             $('#ul').append(str)
 
         });
+
+        if(tel!=''){
+            var houseID=[];
+            for (var i=0,len=DataObj.length;i<len;i++){
+                if(tel==DataObj[i].owner_phone){
+                    houseID.push(DataObj[i].id)
+                }
+            }
+            str='';
+            for (i=0;i<houseID.length;i++){
+                str+='<span>'+houseID[i]+'</span>'
+            }
+            $('#house_ID').html(str);
+            console.log(houseID)
+        }
+
+
     })
 </script>
